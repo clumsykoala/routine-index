@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+
+% Define Color for subjects
+\newcommand{\anatomy}{\textcolor{red}{Anatomy}}
+\newcommand{\physiology}{\textcolor[HTML]{006400}{Physiology}}
+\newcommand{\biochemistry}{\textcolor{blue}{Biochemistry}}
+
+\begin{document}
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			\bfseries Day/Time & \bfseries 9:00 AM - 10:00 AM & \bfseries 10:00 AM - 11:00 AM & \bfseries 11:00 AM - 1:00 PM & \bfseries 1:00 PM - 3:00 PM \\
+			
+			
+			\hline
+			\bfseries \multirow{2}{*}{Saturday} & \multirow{2}{*}{\anatomy} & \multirow{2}{*}{\biochemistry} & \physiology & \multirow{2}{*}{\anatomy} \\
+			\cline{4-4}
+			& & & \biochemistry & \\
+			
+			\hline
+			\bfseries \multirow{2}{*}{Sunday} & \multirow{2}{*}{\anatomy} & \multirow{2}{*}{\physiology} & \multirow{2}{*}{\anatomy}  & \physiology \\
+			\cline{5-5}
+			& & & & \biochemistry \\
+			
+			\hline
+			\bfseries \multirow{2}{*}{Monday} & \multirow{2}{*}{\biochemistry} & \bfseries \multirow{2}{*}{Comd. Med.} & \physiology & \multirow{2}{*}{\anatomy}\\
+			\cline{4-4}
+			& & & \biochemistry & \\
+			
+			\hline
+			\bfseries \multirow{2}{*}{Tuesday} & \multirow{2}{*}{\anatomy} & \multirow{2}{*}{\biochemistry} & \multirow{2}{*}{\anatomy} & \physiology \\
+			\cline{5-5}
+			& & & & \biochemistry \\
+			
+			\hline
+			\bfseries \multirow{2}{*}{Wednesday} & \multirow{2}{*}{\physiology} & \multirow{2}{*}{\anatomy} & \physiology & \multirow{2}{*}{\anatomy} \\
+			\cline{4-4}
+			& & & \biochemistry & \\
+			
+			\hline
+			\bfseries \multirow{2}{*}{Thursday} & \multirow{2}{*}{\physiology} & \multirow{2}{*}{\anatomy} & \multirow{2}{*}{\anatomy} & \physiology \\
+			\cline{5-5}
+			& & & & \biochemistry \\
+			\hline
+			
+		\end{tabular}
+	\end{table}
+\end{document}
